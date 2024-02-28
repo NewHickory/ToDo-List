@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To Do List</title>
+  <link rel="stylesheet" href="sytyles.css">
+  <script src="todo.js" defer></script>
+</head>
+<body>
+  <div>
+    <label for="UserID-input">UserID:</label> 
+    <input id="UserID-input" type="number" placeholder="Enter ID number" onkeyup="updateUserID(this)">
+    <button value="Submit UserID" id="UserID-submit" onclick="filteredTodos()">Submit</button>
+  </div>
+  <button onclick="fetchTodos()">Fetch Todos</button>
+  <button onclick="logTodos()">Log Todos</button>
+  <button onclick="populateTodos()">Populate Todos</button>
+
+  <ol id="todolist">
+    
+  </ol>
+  
+</body>
+</html>
+
